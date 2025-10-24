@@ -3,7 +3,7 @@
 int main(void) {
     int num1 = 12;
     int num2 = 4;
-    char op = '+';  /* a changer pour essayer avec : '-', '*', '/', '%', '&', '|', '~' */
+    char op = '%';  /* a changer pour essayer avec : '-', '*', '/', '%', '&', '|', '~' */
 
     int resultat = 0;
 
@@ -64,3 +64,4 @@ int main(void) {
 
     return 0;
 }
+
