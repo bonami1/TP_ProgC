@@ -1,32 +1,17 @@
 #include <stdio.h>
 
 int main() {
-    int n;
-    int U0 = 0, U1 = 1;  
-    int Un;             
+    int n = 7;
+    int a = 0, b = 1, c;
 
-    printf("Entrez la valeur de n : ");
-    scanf("%d", &n);
-
-    if (n < 0) {
-        printf("n doit etre >= 0.\n");
-        return 0;
-    }
-
-    printf("Suite de Fibonacci jusqu'a U%d : ", n);
-
-    if (n >= 0) printf("%d ", U0);
-    if (n >= 1) printf("%d ", U1);
+    printf("%d, %d", a, b);
 
     for (int i = 2; i <= n; i++) {
-        Un = U0 + U1;
-        printf("%d ", Un);
-
-        U0 = U1;
-        U1 = Un;
+        c = a + b;
+        printf(", %d", c);
+        a = b;
+        b = c;
     }
-
-    printf("\n");
 
     return 0;
 }
